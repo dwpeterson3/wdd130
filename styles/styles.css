@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -19,4 +21,11 @@ img {
 }
 p {
    padding: 10px; 
+}
+body {
+    font-family: Georgia;
+}
+
+h1 {
+  font-family: Merriweather;
 }
