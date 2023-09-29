@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root {
+    --primary-color: #009ddc;
+    --secondary-color: #c17817;
+    --accent1-color: #595959;
+    --accent2-color: #a4c2a8;
+
+    --heading-font: 'manrope', serif;
+    --paragraph-font: 'manrope', serif;
+
+    --nav-background-color: #595959;
+    --nav-link-color: #009ddc;
+    --nav-hover-link-color: green;
+    --nav-hover-background-color: pink;
+}
+* {
+    max-width: 1200px;
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.hero article img{
+    width: 200px;
+    float: right;
+}
+article p {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+section p {
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+}
+
+.sociallinks a href {
+    text-decoration: none;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
