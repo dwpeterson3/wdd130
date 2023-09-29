@@ -19,13 +19,17 @@
 h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    position:absolute;
+    top: 30px;
+    left: 200px;
+    display: inline-block;
+
 }
 
-.hero article img{
-    width: 200px;
-    float: right;
+.hero{
+    position: relative;
 }
-article p {
+p {
     font-family: var(--paragraph-font);
     color: var(--accent1-color);
 }
@@ -34,10 +38,21 @@ h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
-
-section p {
-    font-family: var(--paragraph-font);
-    color: var(--accent1-color);
+article {
+    position:absolute;
+    top: 90px;
+    left: 100px;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, .0642);
+}
+#happy{
+    float:right;
+    height: 180px;
+    width: auto;
+}
+article p {
+    float:left;
+    text-decoration: none;
 }
 
 .sociallinks a href {
