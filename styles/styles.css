@@ -8,14 +8,20 @@
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    
 }
 h1 {
     color: steelblue;
+    border-bottom: solid;
 }
 img {
     
@@ -36,13 +42,15 @@ h1 {
   font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
 }
 main {
-    max-width: 840px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 aside {
     position: relative;
     text-align: center;
     max-width: 840px;
-
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside img {
     width: 200px;
@@ -53,6 +61,10 @@ main img {
     width: 150px;
     height: auto;
     float: right;
+}
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 footer {
     margin-top: 1em;
@@ -69,6 +81,13 @@ footer {
 }
 aside h2 {
     position: absolute;
-    top: 20px;
-    left: 363px;
+    left: 160px;
+    top: 25px;    
+}
+aside p {
+    font-size: 30px;
+}
+.grid {
+    display: grid;
+    align-items: center;
 }
