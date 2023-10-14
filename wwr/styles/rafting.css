@@ -25,9 +25,7 @@ main {
 h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    position:absolute;
-    top: 0px;
-    left: 400px;
+    text-align: center;
 
 }
 
@@ -162,5 +160,5 @@ section {
 }
 .wireframe {
     display: flex;
-    
+
 }
