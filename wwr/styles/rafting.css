@@ -19,6 +19,8 @@
 main {
     width: 1200px;
     background-color: grey;
+    display:grid;
+    
 }
 h1 {
     font-family: var(--heading-font);
@@ -92,6 +94,7 @@ header {
 
 section h2 {
     text-align: center;
+    max-width: 1200px;
 }
 
 footer {
@@ -130,4 +133,34 @@ header img {
 section {
     background-color: grey;
     width: 1200px;
+}
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: lightgrey;
+  display:grid;
+}
+
+.contact {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.employee img {
+    width: 120px;
+}
+.employee {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.information {
+    display:grid;
+    max-width: 600px;
+    text-align: center;
+}
+.wireframe {
+    display: flex;
+    
 }
