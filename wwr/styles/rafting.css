@@ -19,7 +19,6 @@
 main {
     width: 1200px;
     background-color: grey;
-    display:grid;
     
 }
 h1 {
@@ -28,7 +27,6 @@ h1 {
     text-align: center;
 
 }
-
 .hero{
     position: relative;
     width:1200px;
@@ -89,6 +87,7 @@ header {
     grid-template-columns: 1fr 2fr;
     background-color: grey;
     width:1200px;
+    min-height: 275px;
 }
 
 section h2 {
@@ -109,7 +108,8 @@ footer {
     align-items: center;
 }
 header img {
-    max-width: 50%;
+    max-width: 45%;
+
 }
 
 .history {
