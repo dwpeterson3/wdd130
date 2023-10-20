@@ -147,6 +147,7 @@ header img {
     grid-template-columns: repeat(5, 1fr);
     gap: 1.2rem;
     /* max-width: 1200px; */
+    text-align: center;
 }
 
 .adventure img {
@@ -217,7 +218,7 @@ section {
 
 table,
 td {
-    border: 1px solid black;
+    border: 1px solid var(--accent2-color);
     border-collapse: collapse;
     background-color: var(--primary-color);
     padding: 2rem;
@@ -235,6 +236,33 @@ td {
 .skill img {
     max-width: 325px;
 }
+.testimonials {
+    border: 1px solid var(--accent2-color);
+    border-radius: 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 16px
+}
+.heather {
+    /* border: 1px solid var(--accent2-color); */
+    text-align: center;
+}
+.brandon {
+    border-left: 1px solid var(--accent2-color);
+    padding-left: 16px;
+    text-align: center;
+}
+.greg {
+    border-top: 1px solid var(--accent2-color);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+h3, h4 {
+    color: var(--secondary-color);
+}
+
+
 
 /* @media (max-width:920px) {
     .reservations {
@@ -269,15 +297,18 @@ td {
 .homeimages {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+    /* gap: 1.0rem; */
+    text-align: center;
 }
 .home-grid {
     display:grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 .homeimages img {
     max-width: 250px;
-    padding-left: 50px;
+    padding-left: 60px;
 }
 .home-form button {
     font-size: 15px;
@@ -289,4 +320,7 @@ td {
 .nav:hover {
     background-color: #D2DEFF;
     color:#D2DEFF;
+}
+.homeimages figcaption {
+    padding-left: 60px;
 }
