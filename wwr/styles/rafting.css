@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 :root {
-    --primary-color: #FBFFFE;
-    --secondary-color: #001514;
-    --accent2-color: #6B0504;
-    --accent1-color: #E6AF2E;
+    --primary-color: #FEFBE9;
+    --secondary-color: #1F2D5C;
+    --accent2-color: #3E9B4F;
+    --accent1-color: #56BA9F;
 
     --heading-font: 'manrope', serif;
     --paragraph-font: 'manrope', serif;
 
-    --nav-background-color: #A3320B;
-    --nav-link-color: #009ddc;
-    --nav-hover-link-color: green;
-    --nav-hover-background-color: pink;
+    --nav-background-color: #F7F9FF;
+    --nav-link-color: #1F2D5C;
+    --nav-hover-link-color: #D2DEFF;
+    --nav-hover-background-color: #D2DEFF;
 }
 
-/* * {
-    max-width: 1200px;
-} */
+* {
+    /* max-width: 1200px; */
+    /* background-color: var(--primary-color); */
+}
 main {
-    max-width: 1200px;
-    /* background-color: grey; */
+    /* max-width: 1200px; */
+    background-color: var(--primary-color);
     margin: 0 auto;
     padding: 16px;
     display: flex;
@@ -31,26 +32,29 @@ main {
 
 h1 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
 
 }
 
 .hero {
     position: relative;
-    /* width:1200px; */
     max-width: 100%;
+    background-color: none;
+    text-align: center;
 
 }
 
 .hero img {
     /* width:1200px; */
+    text-align: center;
 
 }
 
+
 p {
     font-family: var(--paragraph-font);
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 h2 {
@@ -59,12 +63,13 @@ h2 {
     text-align: center;
 }
 
-article {
+.aboutus {
     position: absolute;
-    top: 80px;
-    left: 0px;
-    background: rgba(0, 21, 20, .5);
+    top: 125px;
+    left: 25px;
+    /* background: rgba(0, 21, 20, .5); */
     text-align: center;
+    max-width: 940px;
 
 }
 
@@ -72,12 +77,15 @@ article {
     float: right;
     height: 120px;
     width: auto;
+    padding-top: 10px;
+    padding-right: 5px;
 }
 
-article p {
+.aboutus p{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 footer nav {
@@ -92,8 +100,6 @@ footer nav {
 header nav {
     display: flex;
     text-decoration: none;
-    /* grid-column: 2; */
-    /* justify-content: space-evenly; */
     align-items: center;
     gap: 2rem;
 }
@@ -101,27 +107,22 @@ header nav {
 header {
     display: flex;
     justify-content: space-between;
-
-    /* display:grid;
-    gap:1.5rem;
-    grid-template-columns: 1fr 2fr;
-    background-color: grey; */
-    /* width:1200px; */
     height: 100px;
     padding: 0 16px;
+    background-color: var(--primary-color)
 }
 
 section h2 {
     text-align: center;
-    /* max-width: 1200px; */
 }
 
 footer {
-    background-color: grey;
-    /* width: 1200px; */
     text-align: center;
+    background-color: var(--primary-color);
 }
-
+figcaption {
+    color: var(--secondary-color);
+}
 
 /* .logo {
     display:flex;
@@ -154,7 +155,7 @@ header img {
 }
 
 section {
-    background-color: grey;
+    /* background-color: grey; */
     /* width: 1200px; */
 }
 
@@ -218,7 +219,7 @@ table,
 td {
     border: 1px solid black;
     border-collapse: collapse;
-    background-color: lightgray;
+    background-color: var(--primary-color);
     padding: 2rem;
 }
 .information table img {
@@ -235,11 +236,11 @@ td {
     max-width: 325px;
 }
 
-@media (max-width:920px) {
+/* @media (max-width:920px) {
     .reservations {
         flex-direction: column;
-    }
-}
+    } */
+
 
 /* .reservations button {
     display: flex;
@@ -247,3 +248,45 @@ td {
     
 
 } */
+
+.home-section1 {
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 1.2rem
+}
+.home-section1 nav{
+    font-size: 35px;
+    text-align: center;
+}
+.homeheader {
+    text-align: center;
+}
+
+.home-form {
+    border: 3px solid var(--accent2-color)
+}
+.homeimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+.home-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.homeimages img {
+    max-width: 250px;
+    padding-left: 50px;
+}
+.home-form button {
+    font-size: 15px;
+ 
+}
+.button:hover {
+    background-color: #D2DEFF;
+}
+.nav:hover {
+    background-color: #D2DEFF;
+    color:#D2DEFF;
+}
