@@ -145,13 +145,14 @@ header img {
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.2rem;
+    /* gap:1.2rem; */
     /* max-width: 1200px; */
     text-align: center;
+    /* justify-content: center; */
 }
 
 .adventure img {
-    width: 150px;
+    width: 225px;
     height: auto;
 }
 
@@ -160,14 +161,18 @@ section {
     /* width: 1200px; */
 }
 
-.form {
+/* .form { */
+    form {
     max-width: 600px;
     margin: 0 auto;
     padding: 1rem;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--accent2-color);
     border-radius: 0.5rem;
-    background-color: lightgrey;
+    background-color: var(--accent1-color);
     display: grid;
+}
+fieldset {
+    border: 2px solid var(--accent2-color)
 }
 
 .contact {
@@ -176,7 +181,7 @@ section {
 }
 
 .employee img {
-    width: 120px;
+    width: 225px;
 }
 
 .employee {
@@ -188,6 +193,10 @@ section {
     display: flex;
     /* max-width: 600px; */
     text-align: center;
+    flex-direction: column;
+}
+figcaption {
+    color: var(--secondary-color);
 }
 
 .wireframe {
@@ -222,6 +231,7 @@ td {
     border-collapse: collapse;
     background-color: var(--primary-color);
     padding: 2rem;
+    color: var(--secondary-color);
 }
 .information table img {
     max-width: 300px;
