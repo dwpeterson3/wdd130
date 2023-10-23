@@ -19,6 +19,10 @@
     /* max-width: 1200px; */
     /* background-color: var(--primary-color); */
 }
+
+body {
+    margin: 0;
+}
 main {
     /* max-width: 1200px; */
     background-color: var(--primary-color);
@@ -40,15 +44,23 @@ h1 {
 .hero {
     position: relative;
     max-width: 100%;
-    background-color: none;
     text-align: center;
 
 }
 
 .hero img {
-    /* width:1200px; */
+    display: block;
+    width: 100%;
+    height:auto;
     text-align: center;
 
+}
+
+.hero h1 {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--primary-color);
 }
 
 
@@ -66,10 +78,13 @@ h2 {
 .aboutus {
     position: absolute;
     top: 125px;
-    left: 25px;
+    /* left: 25px; */
     /* background: rgba(0, 21, 20, .5); */
     text-align: center;
-    max-width: 940px;
+    /* max-width: 940px; */
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--primary-color);
+    width: 100%;
 
 }
 
@@ -85,7 +100,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--primary-color);
 }
 
 footer nav {
@@ -172,7 +187,8 @@ section {
     display: grid;
 }
 fieldset {
-    border: 2px solid var(--accent2-color)
+    border: 2px solid var(--accent2-color);
+    color: var(--secondary-color);
 }
 
 .contact {
@@ -291,7 +307,8 @@ h3, h4 {
     padding: 10px;
     display:flex;
     flex-direction: column;
-    gap: 1.2rem
+    gap: 1.2rem;
+    align-items: center;
 }
 .home-section1 nav{
     font-size: 35px;
@@ -299,6 +316,26 @@ h3, h4 {
 }
 .homeheader {
     text-align: center;
+    position:relative;
+
+}
+.homeheader h1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    color: var(--primary-color);
+    margin: 0;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+
+
+}
+.homeheader img {
+    display: block;
+    width: 100%;
+    height:auto;
+
 }
 
 .home-form {
@@ -333,4 +370,22 @@ h3, h4 {
 }
 .homeimages figcaption {
     padding-left: 60px;
+}
+.cta {
+  background-color: buttonface;
+  color: buttontext;
+  display: inline-block;
+  padding-block: 1px;
+  padding: 8px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+  box-sizing: border-box;
+  appearance: auto;
+  text-align: center;
+  width: fit-content;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+
 }
